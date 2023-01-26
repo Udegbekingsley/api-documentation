@@ -1,0 +1,52 @@
+User Service EndPoints 
+GET: http://admin.tpsapp.net/api/UserProfile			-->Gets Array Registered Users and UserRole 
+GET: http://admin.tpsapp.net/api/UserProfile/UserID  		-->Gets All Registered with a UserID
+Post: http://admin.tpsapp.net/api/UserProfile  -->(Create User)
+      	Address 
+      	UserEmail  
+      	UserFullName  
+      	UserID  
+      	UserPhoneNo  
+      	UserName 
+	UserPassword
+        RequestType=3
+
+Post: http://admin.tpsapp.net/api/UserProfile  -->(Delete User)
+      	Address 
+      	UserEmail 
+      	UserName  
+        RequestType=2
+	                
+ Post: http://admin.tpsapp.net/api/UserProfile  -->(Modify User)
+      	Address 
+      	UserEmail  
+      	UserFullName  
+      	UserID  
+      	UserPhoneNo  
+      	UserName 
+	UserPassword
+        RequestType=1  
+
+Post: http://admin.tpsapp.net/api/UserProfile  -->(Login User)
+      	UserName  
+	UserPassword 
+       	SupervisingFirmID 
+	RequestType=4          
+
+
+Post: http://admin.tpsapp.net/api/UserProfile  -->(Map User to Role)
+      	UserName  
+       	UserRoleNo
+	RequestType=5 
+
+
+
+Supervising Firm Service EndPoints
+
+Get: api/SupervisingFirm 
+Get: api/SupervisingFirm/SupervisingFirmID
+Post: api/SupervisingFirm
+	SupervisingFirmAddress
+	SupervisingFirmEmail
+	SupervisingFirmName
+	SupervisingFirmPhoneNo
