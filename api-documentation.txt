@@ -5,6 +5,7 @@ Post: http://admin.tpsapp.net/api/Programme  -->(Create Programme)
       	ProgramName 
 	ProgramCode 
 	SupervisingFirmID
+	LoginUserName
         RequestType=3
 
 Post: http://admin.tpsapp.net/api/Programme  -->(Delete Programme)
@@ -17,6 +18,7 @@ Post: http://admin.tpsapp.net/api/Programme  -->(Delete Programme)
 	ProgramCode 
 	SupervisingFirmID 
         RequestType=1  
+
 
 
 State Service EndPoints 
