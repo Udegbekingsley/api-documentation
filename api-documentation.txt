@@ -1,3 +1,72 @@
+Programme Service EndPoints 
+GET: http://admin.tpsapp.net/api/Programme			-->Gets List of Programme
+GET: http://admin.tpsapp.net/api/Programme/ProgrammeID 		-->Gets Programme with a ProgrammeID
+Post: http://admin.tpsapp.net/api/Programme  -->(Create Programme)
+      	ProgramName 
+	ProgramCode 
+	SupervisingFirmID
+        RequestType=3
+
+Post: http://admin.tpsapp.net/api/Programme  -->(Delete Programme)
+      	ProgramName 
+	ProgramCode 
+        RequestType=2
+	                
+ Post: http://admin.tpsapp.net/api/Programme  -->(Modify Programme)
+      	ProgramName 
+	ProgramCode 
+	SupervisingFirmID 
+        RequestType=1  
+
+
+State Service EndPoints 
+GET: http://admin.tpsapp.net/api/State			-->Gets List of State
+GET: http://admin.tpsapp.net/api/State/StateID 		-->Gets State with a StateID
+Post: http://admin.tpsapp.net/api/State  -->(Create State)
+      	StateName 
+	StateCode 
+        RequestType=3
+
+Post: http://admin.tpsapp.net/api/State  -->(Delete State)
+      	StateName 
+        RequestType=2
+	                
+ Post: http://admin.tpsapp.net/api/State  -->(Modify State)
+      	StateName 
+	StateCode
+        RequestType=1 
+
+
+
+LGA Service EndPoints 
+GET: http://admin.tpsapp.net/api/LGA			-->Gets List of LGA
+GET: http://admin.tpsapp.net/api/LGA/LGAID 		-->Gets LGA with a LGAID
+Post: http://admin.tpsapp.net/api/LGA  -->(Create LGA)
+      	LGAName 
+	LGACode 
+	StateCode 
+        RequestType=3
+
+Post: http://admin.tpsapp.net/api/LGA  -->(Delete LGA)
+      	LGAName 
+	StateCode 
+        RequestType=2
+	                
+ Post: http://admin.tpsapp.net/api/LGA  -->(Modify LGA)
+      	LGAName 
+	LGACode
+	StateCode 
+        RequestType=1 
+
+
+
+
+
+
+
+
+
+
 User Service EndPoints 
 GET: http://admin.tpsapp.net/api/UserProfile			-->Gets Array Registered Users and UserRole 
 GET: http://admin.tpsapp.net/api/UserProfile/UserID  		-->Gets All Registered with a UserID
@@ -43,14 +112,24 @@ Post: http://admin.tpsapp.net/api/UserProfile  -->(Map User to Role)
 
 Supervising Firm Service EndPoints
 
-Get: api/SupervisingFirm 
-Get: api/SupervisingFirm/SupervisingFirmID
-Post: api/SupervisingFirm
+Get: http://admin.tpsapp.netapi/SupervisingFirm 			-->(Lost All SupervisingFirm)
+Get: http://admin.tpsapp.netapi/SupervisingFirm/SupervisingFirmID	-->(Get a SupervisingFirm based on SupervisingFirmID)
+
+Post: http://admin.tpsapp.netapi/SupervisingFirm			-->(Map SupervisingFirm )
 	SupervisingFirmAddress
 	SupervisingFirmEmail
 	SupervisingFirmName
 	SupervisingFirmPhoneNo
 
-	noted
 
-	new
+
+
+
+
+
+
+
+
+
+
+	 
